@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/earba/AndroidStudioProjects/FoodApp/app/src/main/res/drawable/background.xml" value="0.2055" />
         <entry key="..\:/Users/earba/AndroidStudioProjects/FoodApp/app/src/main/res/layout/activity_main.xml" value="0.1765625" />
+        <entry key="..\:/Users/earba/AndroidStudioProjects/FoodApp/app/src/main/res/layout/food_design_layout.xml" value="0.3907563025210084" />
       </map>
     </option>
   </component>
