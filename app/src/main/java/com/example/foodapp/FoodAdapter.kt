@@ -8,9 +8,12 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.food_design_layout.view.*
 
+//Custom adapter
 class FoodAdapter: BaseAdapter {
+    //Variable
     var listOfFood= ArrayList<Food>()
     var context:Context?=null
+    //Constructor
     constructor(context: Context, listOfFood:ArrayList<Food>):super() {
         this.context = context
         this.listOfFood=listOfFood
@@ -34,6 +37,7 @@ class FoodAdapter: BaseAdapter {
         var foodView= inflator.inflate(R.layout.food_design_layout,null)
         foodView.imageView.setImageResource(food.img!!)
         foodView.textView.text =  food.name!!
+        //Onclick listener for gridview item click
         foodView.imageView.setOnClickListener {
             val intent = Intent(context,Food_Details_Activity::class.java)
             intent.putExtra("name",food.name!!)

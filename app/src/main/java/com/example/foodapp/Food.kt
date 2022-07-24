@@ -1,5 +1,7 @@
 package com.example.foodapp
 
+
+// Simple food class to store data
 class Food {
     var name:String? = null
     var des:String? = null
