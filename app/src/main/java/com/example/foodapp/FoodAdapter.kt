@@ -34,6 +34,13 @@ class FoodAdapter: BaseAdapter {
         var foodView= inflator.inflate(R.layout.food_design_layout,null)
         foodView.imageView.setImageResource(food.img!!)
         foodView.textView.text =  food.name!!
+        foodView.imageView.setOnClickListener {
+            val intent = Intent(context,Food_Details_Activity::class.java)
+            intent.putExtra("name",food.name!!)
+            intent.putExtra("des",food.des!!)
+            intent.putExtra("image",food.img!!)
+            context!!.startActivity(intent)
+        }
         return  foodView
     }
 }
